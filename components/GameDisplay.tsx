@@ -113,10 +113,16 @@ const GameDisplay: React.FC<GameDisplayProps> = (props) =>{
     }
     const handleOddsClick= ()=>{
         //TODO: Redirect to page that shows Odds of game
-        setShowOdds(!showOdds);
+        setShowOdds(true);
     }
+
+    const closeNotification = () => {
+        setShowOdds(false);
+        setShowPreds(false);
+    };
+    
     const handlePredictClick= ()=>{
-        setShowPreds(!showPreds)
+        setShowPreds(true)
     }
     function formatDate(dateString: string): string {
         const options: Intl.DateTimeFormatOptions = {
@@ -198,6 +204,13 @@ const GameDisplay: React.FC<GameDisplayProps> = (props) =>{
                 >
                     Odds
                 </Button>
+                {/* Popup notification */}
+                {showOdds && (
+                    <div className={styles.notification}>
+                        <p>This feature is not yet implemented.</p>
+                        <button onClick={closeNotification}>Close</button>
+                    </div>
+                )}
                 <Button
                     variant="contained"
                     onClick={handlePredictClick}
@@ -213,6 +226,13 @@ const GameDisplay: React.FC<GameDisplayProps> = (props) =>{
                 >
                     Predict
                 </Button>
+                {/* Popup notification */}
+                {showPreds && (
+                    <div className={styles.notification}>
+                        <p>This feature is not yet implemented.</p>
+                        <button onClick={closeNotification}>Close</button>
+                    </div>
+                )}
             </div>
             )}
         </div>
