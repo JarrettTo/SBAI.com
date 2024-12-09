@@ -1,6 +1,7 @@
 @media (min-width: 0px) {
     .main {
         background-color: #FFFFFF;
+        padding: 10px 0px;
     }
     .vs {
         font-size: 14px;
@@ -17,7 +18,7 @@
         flex-wrap: wrap;
     }
     .game_display {
-        padding-right: 50px;
+        padding-right: 30px;
         padding-left: 0px;
     }
     .ou_prediction{
@@ -35,12 +36,16 @@
     .prediction{
         align-items: center;
         justify-content: center;
-        margin-left: 0px;
+        margin-left: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: 10px;
     }
     .button_container {
         padding-top: 20px;
         justify-content: space-between;
         width: 100%;
+        padding-right: 20px;
     }
     .odds {
         font-size: 10px;
@@ -50,6 +55,7 @@
     }
     .team_status{
         margin-left:30px;
+        width: 20%;
     }
     .prediction_type_ou{
         font-size: 12px;
@@ -61,6 +67,7 @@
 @media (min-width: 768px) {
     .main {
         background-color: #FFFFFF;
+        padding: 20px 0px;
     }
     .vs {
         font-size: 14px;
@@ -70,7 +77,7 @@
     .prediction{
         align-items: flex-start;
         justify-content: flex-start;
-        margin-left: 40px;
+        padding-left: 40px;
     }
     .odds{
         font-size: 16px;
@@ -88,7 +95,7 @@
         flex-wrap: wrap;
     }
     .game_display {
-        padding-right: 50px;
+        padding-right: 30px;
     }
     .prediction_type {
         font-size: 13px;
@@ -109,15 +116,20 @@
     .button_container {
         justify-content: end;
         width: 100%;
+        padding-right: 40px;
     }
     .team {
         display: inline;
+    }
+    .team_status {
+        width: 26%;
     }
 }
 
 @media (min-width: 1298px) {
     .main {
         background-color: #FFFFFF;
+        padding: 10px 0px;
     }
     .vs {
         font-size: 20px;
@@ -136,7 +148,7 @@
     .prediction{
         align-items: flex-start;
         justify-content: flex-start;
-        margin-left: 60px;
+        padding-left: 40px;
     }
     .prediction_type {
         font-size: 15px;
@@ -161,11 +173,15 @@
     .button_container {
         width: 40%;
         justify-content: end;
+        padding-right: 50px;
     }
     .ou_prediction{
         margin-bottom: 0px;
     }
     .team {
         display: inline;
+    }
+    .team_status {
+        width: 26%;
     }
 }

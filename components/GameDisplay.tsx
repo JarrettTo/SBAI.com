@@ -167,7 +167,7 @@ const GameDisplay: React.FC<GameDisplayProps> = (props) =>{
                 </div>
             </div>
             {isInDropdown ? null : (
-            <div className={styles.button_container}style={{display:'flex', flexDirection:'row', alignItems: 'center', paddingRight: '50px'}}>
+            <div className={styles.button_container}style={{display:'flex', flexDirection:'row', alignItems: 'center'}}>
                 <Button
                     variant="contained"
                     onClick={handleBoxScoreClick}
@@ -233,14 +233,14 @@ const GameDisplay: React.FC<GameDisplayProps> = (props) =>{
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <div  style={{ width: '4%'}}>{getMiniTeamIcon(teamAbbMap[homeTeam])}</div>
-                    <div className={styles.team_status} style={{ width: '26%', padding:'10px 0px', color: '#555'}}>{oddsMap['home_team']} (Home)</div>
+                    <div className={styles.team_status} style={{ padding:'10px 0px', color: '#555'}}>{oddsMap['home_team']} (Home)</div>
                     <div style={{ width: '20%', textAlign: 'center', padding:'15px 0px', margin: '2px', backgroundColor: '#f5f5f5', color: '#555'}}>{oddsMap['home_spread_point']}&emsp;{oddsMap['home_spread_price']}</div>
                     <div style={{ width: '20%', textAlign: 'center', padding:'15px 0px', margin: '2px', backgroundColor: '#f5f5f5', color: '#555'}}>{oddsMap['home_totals_name']} {oddsMap['home_totals_point']}&emsp;{oddsMap['home_totals_price']}</div>
                     <div style={{ width: '20%', textAlign: 'center', padding:'15px 0px', margin: '2px', backgroundColor: '#f5f5f5', color: '#555'}}>{oddsMap['home_h2h_price'] ? oddsMap['home_h2h_price'] : '&emsp;'}</div>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                 <div style={{ width: '4%'}}>{getMiniTeamIcon(teamAbbMap[awayTeam])}</div>
-                    <div className={styles.team_status} style={{ width: '26%', padding:'10px 0px', color: '#555'}}>{oddsMap['away_team']} (Away)</div>
+                    <div className={styles.team_status} style={{ padding:'10px 0px', color: '#555'}}>{oddsMap['away_team']} (Away)</div>
                     <div style={{ width: '20%', textAlign: 'center', padding:'15px 0px', margin: '2px', backgroundColor: '#f5f5f5', color: '#555'}}>{oddsMap['away_spread_point']}&emsp;{oddsMap['away_spread_price']}</div>
                     <div style={{ width: '20%', textAlign: 'center', padding:'15px 0px', margin: '2px', backgroundColor: '#f5f5f5', color: '#555'}}>{oddsMap['away_totals_name']} {oddsMap['away_totals_point']}&emsp;{oddsMap['away_totals_price']}</div>
                     <div style={{ width: '20%', textAlign: 'center', padding:'15px 0px', margin: '2px', backgroundColor: '#f5f5f5', color: '#555'}}>{oddsMap['away_h2h_price'] ? oddsMap['away_h2h_price'] : '&emsp;'}</div>
